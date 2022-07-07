@@ -1,4 +1,6 @@
 /* ---------- Resset CSS ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,5 +52,86 @@ table {
 }
 
 /* ---------- Resset CSS ---------- */
+/* ---------- Font ---------- */
+/* ---------- Font ---------- */
+/* ---------- Body ---------- */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ---------- Body ---------- */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px grey;
+}
+header h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 32px;
+  padding: 16px 0px 6px 0px;
+}
+header .fa-arrow-left {
+  font-size: 22px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.localisation__icon {
+  position: relative;
+  right: 16px;
+}
+
+.brief {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 32px;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.brief__title {
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 900;
+}
+.brief__text {
+  padding-bottom: 16px;
+}
+.brief__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border-radius: 32px;
+  margin: 16px;
+  padding: 0px 24px 0px 24px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 2px 4px grey;
+  transition: 0.2s;
+}
+.brief__button:hover {
+  box-shadow: 0px 4px 4px grey;
+}
+.brief__button:hover {
+  filter: brightness(1.2);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA ;
+$color-tertiary: #99E2D0;
+
+$font-title: 'Shrikhand', cursive;
+$font-text: 'Roboto', sans-serif;
+
+$size: 16px;
+$size--logo: $size * 2;
+$size--title: $size * 1.5;
+
+$shadow: 0px 2px calc($size/4) grey;
+
+$logo-padding: $size 0px  $size - 10 0px;

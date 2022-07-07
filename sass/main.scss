@@ -1,3 +1,73 @@
 @import "./reset";
+@import "./variable";
+@import "./mixin";
 
+/* ---------- Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+/* ---------- Font ---------- */
+
+
+
+/* ---------- Body ---------- */
+
+body {
+    font-family: $font-text;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------- Body ---------- */
+
+
+
+header {  
+    @include flex-center;
+    box-shadow: $shadow;
+    h1 {
+        font-family: $font-title;
+        font-size: $size--logo;
+        padding: $logo-padding;
+    }
+    .fa-arrow-left { 
+        font-size: $size--logo - 10;
+        position: absolute;
+        left: $size;
+        top: $size;  
+    }
+}
+
+.localisation {
+    @include flex-center;
+    font-size: $size; 
+    font-weight: bold;
+    padding: $size;
+    background-color: rgba(128, 128, 128, 0.2);
+
+    &__icon { 
+        position: relative;
+        right: $size;
+    }
+}
+
+.brief { 
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    padding: $size * 2; 
+    background-color: rgba(128, 128, 128, 0.1);
+
+    &__title{
+        @include title;
+    }
+    &__text {
+        padding-bottom: $size;
+    }
+    &__button { 
+        @include button;
+    }
+}
 

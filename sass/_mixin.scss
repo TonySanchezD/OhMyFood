@@ -1,0 +1,33 @@
+ @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+@mixin title {
+    padding: $size;
+    font-size: $size--title;
+    font-weight: 900;
+}
+
+ @mixin button {
+    @include flex-center;
+    height: $size * 3;
+    border-radius: $size * 2;
+    margin: $size;
+    padding: 0px $size*1.5 0px $size*1.5;
+    color: white;
+    background: linear-gradient($color-secondary, $color-primary);
+    @include shadow;
+    &:hover{
+       filter: brightness(1.2); 
+    }
+ }
+
+ @mixin shadow  {
+    box-shadow: $shadow;
+    transition: 0.2s;
+    &:hover{
+        box-shadow: 0px 4px calc($size/4) grey;
+    }
+ }
