@@ -7,7 +7,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ul, ol, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -57,6 +57,7 @@ table {
 /* ---------- Body ---------- */
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 a {
@@ -64,12 +65,43 @@ a {
   color: black;
 }
 
+h2 {
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  width: 90%;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.5);
+  transition: 0.2s;
+  height: 48px;
+  border-radius: 32px;
+  margin: 16px 16px 48px 16px;
+  padding: 0px 24px 0px 24px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.button:hover {
+  box-shadow: 8px 8px 4px rgba(128, 128, 128, 0.5);
+}
+.button:hover {
+  filter: brightness(1.2);
+}
+
 /* ---------- Body ---------- */
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 2px 4px grey;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.5);
 }
 header h1 {
   font-family: "Shrikhand", cursive;
@@ -87,6 +119,7 @@ header .fa-arrow-left {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   font-size: 16px;
   font-weight: bold;
   padding: 16px;
@@ -99,39 +132,97 @@ header .fa-arrow-left {
 
 .brief {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 32px;
   background-color: rgba(128, 128, 128, 0.1);
-}
-.brief__title {
-  padding: 16px;
-  font-size: 24px;
-  font-weight: 900;
 }
 .brief__text {
   padding-bottom: 16px;
 }
-.brief__button {
+
+#fonctionnement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.liste {
+  width: 90%;
+  margin-bottom: 32px;
+}
+
+.element-liste {
+  background-color: rgba(128, 128, 128, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 48px;
-  border-radius: 32px;
-  margin: 16px;
-  padding: 0px 24px 0px 24px;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 2px 4px grey;
+  width: 100%;
+  height: 64px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.5);
   transition: 0.2s;
+  margin: 0px 0px 16px 12px;
 }
-.brief__button:hover {
-  box-shadow: 0px 4px 4px grey;
+.element-liste:hover {
+  box-shadow: 8px 8px 4px rgba(128, 128, 128, 0.5);
 }
-.brief__button:hover {
-  filter: brightness(1.2);
+.element-liste__numero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9356DC;
+  position: absolute;
+  left: calc(5% - 6px);
+  width: 24px;
+  height: 24px;
+  color: white;
+  border-radius: 100%;
+}
+.element-liste__icon {
+  position: absolute;
+  left: 15%;
+  color: rgb(128, 128, 128);
+}
+.element-liste__text {
+  font-weight: bold;
+}
+
+.section-restaurants {
+  background-color: rgba(128, 128, 128, 0.1);
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.restaurants {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurants a {
+  width: 100%;
+}
+
+.carte {
+  background-color: white;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 225px;
+  border-radius: 30px;
+}
+.carte img {
+  height: calc(100% - 50px);
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px 30px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

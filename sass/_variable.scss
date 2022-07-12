@@ -9,6 +9,8 @@ $size: 16px;
 $size--logo: $size * 2;
 $size--title: $size * 1.5;
 
-$shadow: 0px 2px calc($size/4) grey;
+$shadow: 0px calc($size/4) calc($size/4) rgba(128, 128, 128, 0.5);
 
 $logo-padding: $size 0px  $size - 10 0px;
+
+$width: 90%;

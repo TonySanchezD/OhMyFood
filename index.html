@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	
 	<head>
 		<meta charset="utf-8">
@@ -21,55 +21,59 @@
 		</header>
 
 		<main>
-			<section class="localisation">
+			<div class="localisation">
 				<span>
 					<i class="fa-solid fa-location-dot localisation__icon"></i>
 				</span>
 				<p class="localisation__ville">Paris, Belleville</p>
-			</section>
+			</div>
 
 			<section class="brief">
 				<h2 class="brief__title">Résevez le menu qui vous convient</h2>
 				<p class="brief__text">Découvrez des restaurants d'exeption,<br /> 
 					séléctionnés pas nos soin.</p>
-				<a class="brief__button" href="#">
+				<a class="button" href="#">
 					<p>Explorer nos restaurants</p>
 				</a>
 			</section>
 
-			<section class="fonctionnement">
+			<section id="fonctionnement">
 				<h2>Fonctionnement</h2>
 
-				<ol>
-					<li>
-						<span>
-							<i class="fa-solid fa-mobile-screen-button"></i>
+				<ol class="liste">
+					
+					<li class="element-liste">
+						<div class="element-liste__numero">1</div>
+						<span class="element-liste__icon">
+							<i class="fa-solid fa-mobile-screen-button "></i>
 						</span>
-						<p>Choisissez un restaurant</p>
+						<p class="element-liste__text">Choisissez un restaurant</p>
 					</li>
 
-					<li>
-						<span>
+					<li class="element-liste">
+						<div class="element-liste__numero">2</div>
+						<span class="element-liste__icon">
 							<i class="fa-solid fa-list-ul"></i>
 						</span>
-						<p>Composez votre menu</p>
+						<p class="element-liste__text">Composez votre menu</p>
 					</li>
 
-					<li>
-						<span>
+					<li class="element-liste">
+						<div class="element-liste__numero">3</div>
+						<span class="element-liste__icon">
 							<i class="fa-solid fa-store"></i>
 						</span>
-						<p>Dégustez au restaurant</p>
+						<p class="element-liste__text">Dégustez au restaurant</p>
 					</li>
 				</ol>
 			</section>
 
-			<section>
+			<section class="section-restaurants">
 				<h2>Restaurants</h2>
 
-				<div>
-					<a href="">
-						<figure>
+				<div class="restaurants">
+					<a href="#">
+						<figure class="carte">
 							<img src="images/restaurants/la_palette_du_gout.jpg" alt="Photo d'un plat du restaurant La palette du goût" />
 							<figcaption>
 								<h3>La palette du goût</h3>
@@ -81,8 +85,8 @@
 						</figure>
 					</a>
 
-					<a href="">
-						<figure>
+					<a href="#">
+						<figure class="carte">
 							<img src="images/restaurants/la_note_enchantee.jpg" alt="Photo d'un plat du restaurant La note enchantée" />
 							<figcaption>
 								<h3>La note enchantée</h3>
@@ -94,8 +98,8 @@
 						</figure>
 					</a>
 
-					<a href="">
-						<figure>
+					<a href="#">
+						<figure class="carte">
 							<img src="images/restaurants/a_la_francaise.jpg" alt="Photo d'un plat du restaurant À la française" />
 							<figcaption>
 								<h3>À la française</h3>
@@ -107,8 +111,8 @@
 						</figure>
 					</a>
 
-					<a href="">
-						<figure>
+					<a href="#">
+						<figure class="carte">
 							<img src="images/restaurants/le_delice_des_sens.jpg" alt="Photo d'un plat du restaurant Le délice des sens" />
 							<figcaption>
 								<h3>Le délice des sens</h3>
@@ -129,27 +133,27 @@
 				<h2>ohmyfood</h2>
 
 				<div>
-					<section>
+					<div>
 						<span>
 							<i class="fa-solid fa-utensils"></i>
 						</span>
 						<p>Proposer un restaurant</p>
-					</section>
+					</div>
 
-					<section>
+					<div>
 						<span>
 							<i class="fa-solid fa-handshake-angle"></i>
 						</span>
 						<p>Devenir partenaire</p>
-					</section>
+					</div>
 
-					<section>
+					<div>
 						<p>Mentions légales</p>
-					</section>
+					</div>
 
-					<section>
+					<div>
 						<p>Contact</p>
-					</section>
+					</div>
 				</div>
 			</section>
 		</footer>
