@@ -2,12 +2,14 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA ;
 $color-tertiary: #99E2D0;
 
-$font-title: 'Shrikhand', cursive;
+$font-logo: 'Shrikhand', cursive;
 $font-text: 'Roboto', sans-serif;
 
 $size: 16px;
 $size--logo: $size * 2;
 $size--title: $size * 1.5;
+$size--title-small: $size * 1.2;
+$size--icon: 28px;
 
 $shadow: 0px calc($size/4) calc($size/4) rgba(128, 128, 128, 0.5);
 
