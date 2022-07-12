@@ -197,6 +197,9 @@ header .fa-arrow-left {
   color: rgb(128, 128, 128);
   font-size: 16px;
 }
+.element-liste:hover {
+  background-color: #f2eafb;
+}
 .element-liste:hover .element-liste__icon {
   color: #9356DC;
 }
@@ -234,6 +237,7 @@ header .fa-arrow-left {
   height: 250px;
   border-radius: 20px;
   background-color: white;
+  position: relative;
 }
 .carte:hover {
   box-shadow: 8px 8px 4px rgba(128, 128, 128, 0.5);
@@ -261,6 +265,17 @@ header .fa-arrow-left {
   font-size: 28px;
   display: flex;
   align-items: center;
+}
+.carte .nouveau {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #99E2D0;
+  padding: 6px 12px 6px 12px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2c9c81;
 }
 
 .footer {

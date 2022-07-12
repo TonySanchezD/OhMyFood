@@ -115,6 +115,10 @@ header {
         font-size: $size;
     }
 
+    &:hover {
+        background-color: lighten($color-primary, 35);
+    }
+
     &:hover .element-liste__icon {
         color: $color-primary;
     }
@@ -143,6 +147,7 @@ header {
     height: 250px;
     border-radius: 20px;
     background-color: white;
+    position: relative;
 
     img {
         height: calc(100% - $size*4);
@@ -166,6 +171,20 @@ header {
 
     &__coeur {
         @include icon;
+    }
+
+    .nouveau {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        background-color: $color-tertiary;
+        padding: 6px 12px 6px 12px;
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: bold;
+        color: darken($color-tertiary, $amount: 35)
+
+        
     }
 }
 
@@ -192,7 +211,7 @@ header {
         margin-bottom: $size;
 
         span {
-            margin-right: $size/2;
+            margin-right: calc($size/2);
         }
     }
 
