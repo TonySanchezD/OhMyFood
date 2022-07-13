@@ -1,0 +1,28 @@
+.footer { 
+    @include flex-center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding-bottom: $size*2;
+
+    &__logo { 
+        font-family: $font-logo;
+        font-weight: 400;
+        width: $width;
+        margin-top: $size;
+        margin-bottom: $size;
+    }
+    
+    ul {
+        width: $width;
+    }
+
+    li {
+        display: flex;
+        margin-bottom: $size;
+
+        span {
+            margin-right: calc($size/2);
+        }
+    }
+
+}

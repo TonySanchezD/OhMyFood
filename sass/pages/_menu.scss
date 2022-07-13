@@ -1,0 +1,44 @@
+.img-restaurant {
+    height: 230px;
+    background: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: 0px $height-header;
+    
+    &--la-francaise{
+        background-image: url(../../images/restaurants/a_la_francaise.jpg);
+    }
+}
+
+
+.menu { 
+    @include flex-center;
+    position: relative;
+    bottom: $height-header;
+    background-color: $color-background;
+    border-radius: 30px 30px 0 0;
+
+}
+
+.title-restaurant { 
+    display: flex;
+    align-items: center;
+    width: $width;
+    
+    &__name { 
+        font-family: $font-logo;
+        font-weight: 400;
+        font-size: $size--title + 8;
+    }
+
+    &__heart { 
+        @include icon;
+    }
+}
+
+.repas {
+    width: $width;
+    margin-bottom: $size * 2;
+
+
+}

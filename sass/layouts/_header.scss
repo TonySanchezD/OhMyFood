@@ -1,0 +1,21 @@
+.header {  
+    @include flex-center;
+    box-shadow: $shadow;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+
+    h1 {
+        font-family: $font-logo;
+        font-size: $size--logo;
+        padding: $logo-padding;
+    }
+    .fa-arrow-left { 
+        font-size: $size--logo - 10;
+        position: absolute;
+        left: $size;
+        top: 50%;  
+        transform: translate(0, -50%);
+    }
+}
