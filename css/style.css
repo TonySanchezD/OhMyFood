@@ -66,7 +66,7 @@ table {
 .header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 32px;
-  padding: 24px 0px 14px 0px;
+  padding: 19.2px 0px 9.2px 0px;
 }
 .header .fa-arrow-left {
   font-size: 22px;
@@ -104,7 +104,7 @@ table {
 }
 
 main {
-  padding-top: 54px;
+  padding-top: 60px;
 }
 
 .localisation {
@@ -225,7 +225,7 @@ main {
   transition: 0.2s;
   margin-bottom: 16px;
   width: 100%;
-  height: 250px;
+  height: 220px;
   border-radius: 20px;
   background-color: white;
   position: relative;
@@ -270,15 +270,11 @@ main {
 }
 
 .img-restaurant {
+  width: 100%;
   height: 230px;
-  background: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  background-position: 0px 54px;
-  margin-bottom: 10px;
-}
-.img-restaurant--la-francaise {
-  background-image: url(../../images/restaurants/a_la_francaise.jpg);
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
 }
 
 .menu {
@@ -286,10 +282,10 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  bottom: 54px;
   background-color: rgb(244, 244, 244);
   border-radius: 30px 30px 0 0;
+  margin-top: 200px;
+  margin-bottom: 16px;
 }
 
 .title-restaurant {
@@ -300,7 +296,7 @@ main {
 .title-restaurant__name {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 28px;
 }
 .title-restaurant__heart {
   height: 100%;

@@ -1,24 +1,17 @@
 .img-restaurant {
+    width: 100%;
     height: 230px;
-    background: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: 0px $height-header;
-    margin-bottom: 10px;
-    
-    &--la-francaise{
-        background-image: url(../../images/restaurants/a_la_francaise.jpg);
-    }
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
 }
-
 
 .menu { 
     @include flex-center;
-    position: relative;
-    bottom: $height-header;
     background-color: $color-background;
     border-radius: 30px 30px 0 0;
-
+    margin-top: 200px;
+    margin-bottom: $size;
 }
 
 .title-restaurant { 
@@ -29,7 +22,7 @@
     &__name { 
         font-family: $font-logo;
         font-weight: 400;
-        font-size: $size--title + 8;
+        font-size: $size--title + 4;
     }
 
     &__heart { 
@@ -72,7 +65,7 @@
     &__title {
         font-weight: 900;
         font-size: $size + 2;
-        margin-bottom: $size / 2;
+        margin-bottom: calc($size / 2);
         
 
         
