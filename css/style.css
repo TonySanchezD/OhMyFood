@@ -66,12 +66,12 @@ table {
 .header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 32px;
-  padding: 16px 0px 6px 0px;
+  padding: 24px 0px 14px 0px;
 }
 .header .fa-arrow-left {
   font-size: 22px;
   position: absolute;
-  left: 16px;
+  left: 24px;
   top: 50%;
   transform: translate(0, -50%);
 }
@@ -275,6 +275,7 @@ main {
   background-size: 100%;
   background-attachment: fixed;
   background-position: 0px 54px;
+  margin-bottom: 10px;
 }
 .img-restaurant--la-francaise {
   background-image: url(../../images/restaurants/a_la_francaise.jpg);
@@ -308,9 +309,44 @@ main {
   align-items: center;
 }
 
-.repas {
+.categorie-repas {
   width: 90%;
   margin-bottom: 32px;
+}
+.categorie-repas__title {
+  font-size: 19.2px;
+  margin-bottom: 24px;
+}
+.categorie-repas__title span {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 4px;
+}
+
+.element-repas {
+  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.5);
+  transition: 0.2s;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: flex-end;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+}
+.element-repas:hover {
+  box-shadow: 8px 8px 4px rgba(128, 128, 128, 0.5);
+}
+.element-repas__title {
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.element-repas__prix {
+  font-weight: 900;
+  color: rgb(40, 40, 40);
+}
+.element-repas .fa-circle-check {
+  display: none;
 }
 
 /* ---------- Font ---------- */
@@ -349,6 +385,7 @@ h2 {
   font-size: 16px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
+  min-width: 150px;
 }
 .button:hover {
   box-shadow: 8px 8px 4px rgba(128, 128, 128, 0.5);

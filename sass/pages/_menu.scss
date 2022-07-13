@@ -4,6 +4,7 @@
     background-size: 100%;
     background-attachment: fixed;
     background-position: 0px $height-header;
+    margin-bottom: 10px;
     
     &--la-francaise{
         background-image: url(../../images/restaurants/a_la_francaise.jpg);
@@ -36,9 +37,56 @@
     }
 }
 
-.repas {
+.categorie-repas {
     width: $width;
     margin-bottom: $size * 2;
 
+    &__title {
+        font-size: $size--title-small;
+        margin-bottom: $size--title;
+        
+        span {
+            border-bottom: 3px solid $color-tertiary;
+            padding-bottom: 4px;
+        }
+    }
+
+    
 
 }
+
+.element-repas { 
+    @include shadow;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: flex-end;
+    padding: $size - 4;
+    margin-bottom: $size;
+    border-radius: 15px;
+
+    &__text {
+
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: $size + 2;
+        margin-bottom: $size / 2;
+        
+
+        
+    }
+
+    &__prix {
+        font-weight: 900;
+        color: rgb(40, 40, 40);
+    }
+
+    .fa-circle-check {
+        display: none;
+    }
+}
+   
+
+    

@@ -14,7 +14,7 @@ $size--icon: 28px;
 
 $shadow: 0px calc($size/4) calc($size/4) rgba(128, 128, 128, 0.5);
 
-$logo-padding: $size 0px  $size - 10 0px;
+$logo-padding: $size--title 0px $size--title - 10 0px;
 
 $height-header: 54px;
 

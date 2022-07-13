@@ -33,5 +33,6 @@ h2 {
 
 .button { 
     @include button;
+    min-width: 150px;
 }
 /* ---------- Body ---------- */

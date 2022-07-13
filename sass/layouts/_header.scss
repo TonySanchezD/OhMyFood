@@ -14,7 +14,7 @@
     .fa-arrow-left { 
         font-size: $size--logo - 10;
         position: absolute;
-        left: $size;
+        left: $size--title;
         top: 50%;  
         transform: translate(0, -50%);
     }
