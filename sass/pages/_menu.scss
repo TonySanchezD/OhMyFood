@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     width: $width;
+    margin-bottom: $size;
     
     &__name { 
         font-family: $font-logo;
@@ -59,15 +60,24 @@
     border-radius: 15px;
 
     &__text {
-
+        white-space: nowrap;
+        width: 260px;
+        overflow: hidden;
     }
 
     &__title {
         font-weight: 900;
         font-size: $size + 2;
-        margin-bottom: calc($size / 2);
-        
+        margin-bottom: calc($size / 2); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+       
+    }
 
+    &__small-title { 
+        font-size: $size - 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
         
     }
 

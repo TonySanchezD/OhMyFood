@@ -39,12 +39,14 @@
     border-radius: $size;
     @include shadow;
     margin: 0px 0px $size 12px;
+    position: relative;
     
     &__numero {
         @include flex-center;
         background-color: $color-primary;
         position: absolute;
-        left: calc(5% - $size + 16px);
+        left: 0;
+        transform: translate(-50%);
         font-size: $size;
         width: $size*1.5;
         height: $size*1.5;
@@ -59,7 +61,7 @@
 
     &__icon {
         position: absolute;
-        left: 20%;
+        left: 12.5%;
         color: rgba(128, 128, 128, 1);
         font-size: $size;
     }
