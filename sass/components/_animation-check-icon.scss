@@ -1,0 +1,29 @@
+.element-repas { 
+    
+    &__animation {
+        background-color: $color-tertiary;
+        color: white;
+        display: inline-block;
+        height: 65px;
+        transition: all 0.4s linear;
+        width: 0px;
+        position: relative;
+        
+        .fa-circle-check {
+            font-size: $size--title;
+            position: absolute;
+            left: calc(65px/2);
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(0turn);
+            transition: all 0.4s linear;
+        }
+    }
+
+    &:hover .element-repas__animation {
+        width : 65px;
+    }
+
+    &:hover .fa-circle-check {
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}

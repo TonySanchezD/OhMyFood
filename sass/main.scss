@@ -1,11 +1,16 @@
 @import "./base/reset";
 @import "./utils/variable";
 @import "./utils/mixin";
+
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/body";
+@import './components/animation-coeur';
+@import "./components/animation-check-icon";
 @import "./pages/accueil";
 @import "./pages/menu";
+
+
 
 /* ---------- Font ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');

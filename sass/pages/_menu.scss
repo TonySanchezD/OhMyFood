@@ -55,14 +55,19 @@
     justify-content: space-between;
     background-color: white;
     align-items: flex-end;
-    padding: $size - 4;
     margin-bottom: $size;
     border-radius: 15px;
+    overflow: hidden;
+    
+    
 
-    &__text {
+    &__text {       background-color: red;
         white-space: nowrap;
-        width: 260px;
         overflow: hidden;
+        padding: $size - 4;
+        flex: 1;
+        
+        
     }
 
     &__title {
@@ -71,7 +76,6 @@
         margin-bottom: calc($size / 2); 
         overflow: hidden;
         text-overflow: ellipsis;
-       
     }
 
     &__small-title { 
@@ -81,13 +85,11 @@
         
     }
 
-    &__prix {
+    &__prix {       background-color: green;
         font-weight: 900;
         color: rgb(40, 40, 40);
-    }
-
-    .fa-circle-check {
-        display: none;
+        padding: $size - 4;
+        margin-left: auto;
     }
 }
    
