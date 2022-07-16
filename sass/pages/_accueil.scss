@@ -43,7 +43,7 @@
     
     &__numero {
         @include flex-center;
-        background-color: $color-primary;
+        background: linear-gradient($color-secondary, $color-primary);
         position: absolute;
         left: 0;
         transform: translate(-50%);
@@ -120,9 +120,15 @@
         @include title-small;
     }
 
+    &__localisation-restaurant {
+        font-size: $size;
+    }
+
     &__coeur {
         @include icon;
     }
+
+
 
     .nouveau {
         position: absolute;

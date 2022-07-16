@@ -81,7 +81,7 @@ table {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(50, 50, 50);
   color: white;
   padding-bottom: 32px;
 }
@@ -98,6 +98,7 @@ table {
 .footer li {
   display: flex;
   margin-bottom: 16px;
+  font-size: 16px;
 }
 .footer li span {
   margin-right: 8px;
@@ -244,7 +245,7 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background-color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
   position: absolute;
   left: 0;
   transform: translate(-50%);
@@ -327,6 +328,9 @@ main {
   font-size: 19.2px;
   font-weight: 900;
   margin-bottom: 7px;
+}
+.carte__localisation-restaurant {
+  font-size: 16px;
 }
 .carte__coeur {
   height: 100%;
@@ -437,6 +441,7 @@ main {
   color: rgb(40, 40, 40);
   padding: 12px;
   margin-left: auto;
+  font-size: 16px;
 }
 
 /* ---------- Font ---------- */
