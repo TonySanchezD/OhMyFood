@@ -1,0 +1,17 @@
+.button { 
+   @include flex-center;
+   @include shadow;
+   height: $size*3;
+   border-radius: $size*2;
+   margin: $size $size $size*3 $size;
+   padding: 0px $size*1.5 0px $size*1.5;
+   font-size: $size;
+   color: white;
+   background: linear-gradient($color-secondary, $color-primary);
+   min-width: 150px;
+
+   &:hover{
+      filter: brightness(1.2); 
+   }
+
+}

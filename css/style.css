@@ -114,7 +114,7 @@ main {
   color: #9356DC;
 }
 .fa-heart:hover::after {
-  transform: translate(-100%, 0%) scale(1);
+  transform: translate(-100%, 0%) scale(1.1);
   transition: all 0.4s cubic-bezier(0.14, 1.45, 0.49, 1.84);
 }
 .fa-heart::before {
@@ -156,6 +156,29 @@ main {
 }
 .element-repas:hover .fa-circle-check {
   transform: translate(-50%, -50%) rotate(1turn);
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.5);
+  transition: 0.2s;
+  height: 48px;
+  border-radius: 32px;
+  margin: 16px 16px 48px 16px;
+  padding: 0px 24px 0px 24px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  min-width: 150px;
+}
+.button:hover {
+  box-shadow: 8px 8px 4px rgba(128, 128, 128, 0.5);
+}
+.button:hover {
+  filter: brightness(1.2);
 }
 
 .localisation {
@@ -278,7 +301,7 @@ main {
   transition: 0.2s;
   margin-bottom: 16px;
   width: 100%;
-  height: 220px;
+  height: 250px;
   border-radius: 20px;
   background-color: white;
   position: relative;
@@ -290,6 +313,7 @@ main {
   height: calc(100% - 64px);
   width: 100%;
   object-fit: cover;
+  object-position: 50% 62%;
   border-radius: 20px 20px 0 0;
   border: none;
 }
@@ -308,7 +332,9 @@ main {
   height: 100%;
   font-size: 28px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 .carte .nouveau {
   position: absolute;
@@ -324,7 +350,7 @@ main {
 
 .img-restaurant {
   width: 100%;
-  height: 230px;
+  height: 70vw;
   object-fit: cover;
   position: fixed;
   z-index: -1;
@@ -337,7 +363,7 @@ main {
   flex-direction: column;
   background-color: rgb(244, 244, 244);
   border-radius: 30px 30px 0 0;
-  margin-top: 200px;
+  margin-top: 60vw;
   padding-bottom: 16px;
 }
 
@@ -356,7 +382,9 @@ main {
   height: 100%;
   font-size: 28px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 
 .categorie-repas {
@@ -387,7 +415,6 @@ main {
   box-shadow: 8px 8px 4px rgba(128, 128, 128, 0.5);
 }
 .element-repas__text {
-  background-color: red;
   white-space: nowrap;
   overflow: hidden;
   padding: 12px;
@@ -406,7 +433,6 @@ main {
   text-overflow: ellipsis;
 }
 .element-repas__prix {
-  background-color: green;
   font-weight: 900;
   color: rgb(40, 40, 40);
   padding: 12px;
@@ -433,29 +459,6 @@ h2 {
   padding-top: 32px;
   margin-bottom: 8px;
   width: 90%;
-}
-
-.button {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.5);
-  transition: 0.2s;
-  height: 48px;
-  border-radius: 32px;
-  margin: 16px 16px 48px 16px;
-  padding: 0px 24px 0px 24px;
-  font-size: 16px;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  min-width: 150px;
-}
-.button:hover {
-  box-shadow: 8px 8px 4px rgba(128, 128, 128, 0.5);
-}
-.button:hover {
-  filter: brightness(1.2);
 }
 
 /* ---------- Body ---------- */

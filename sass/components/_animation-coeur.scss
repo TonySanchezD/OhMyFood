@@ -6,7 +6,7 @@
         color: $color-primary;
 
         &::after  {
-            transform: translate(-100%, 0%) scale(1);
+            transform: translate(-100%, 0%) scale(1.1);
             transition: all 0.4s cubic-bezier(.14,1.45,.49,1.84);
         }
         
@@ -15,6 +15,7 @@
     &::before {
         display: inline-block;
         transform: translate(0%, 0%);
+        
     }
 
     &::after {
@@ -28,6 +29,7 @@
         transform: translate(-100%, 50%) scale(0);
         transition: all 0.4s cubic-bezier(0.85, 0.23, 1, 0.52);
         margin-right: -56px; 
+        
     }
 }
 

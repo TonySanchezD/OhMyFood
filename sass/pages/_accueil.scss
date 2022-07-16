@@ -95,7 +95,7 @@
     @include shadow;
     margin-bottom: $size;
     width: 100%;
-    height: 220px;
+    height: 250px;
     border-radius: 20px;
     background-color: white;
     position: relative;
@@ -104,6 +104,7 @@
         height: calc(100% - $size*4);
         width: 100%;
         object-fit: cover;
+        object-position: 50% 62%;
         border-radius: 20px 20px 0 0;
         border: none;              
     }
