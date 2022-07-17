@@ -1,0 +1,64 @@
+.box-loader {
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(rgba($color-primary, 0.2), rgba($color-secondary, 0.2)) ;
+    z-index: 9999;
+    @include flex-center($axe-p: center, $axe-s: center, $x-y: row);
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 3 {
+     .loader:nth-of-type(#{$i}) {
+        animation-delay: calc($i * 0.5s - 0.5s);
+     }
+}
+
+.loader {
+    margin: 4vw;
+    border-radius: 100%;
+    border: 1px solid $color-primary;
+    height: 5vw;
+    width: 5vw;
+    background: linear-gradient($color-primary ,$color-secondary);
+    box-shadow: 10px 10px 15px $color-secondary, 
+                    -10px -10px 30px $color-primary, 
+                    inset -10px -10px 20px $color-primary, 
+                    inset 5px 5px 10px $color-secondary;
+    animation-duration: 1.5s;
+    animation-name: loader-animation;
+    animation-iteration-count: 1;  
+}
+
+@keyframes loader-animation {
+    
+
+    0%{
+        transform: scale(1);
+        box-shadow: 10px 10px 15px $color-secondary, 
+                    -10px -10px 30px $color-primary, 
+                    inset -10px -10px 20px $color-primary, 
+                    inset 5px 5px 10px $color-secondary;
+    }
+
+    50% {
+        border: 1px solid $color-secondary;  
+
+        transform: scale(1.55);
+        box-shadow: -5px -5px 15px $color-secondary, 
+                    5px 5px 15px $color-primary, 
+                    inset 5px 5px 10px $color-primary, 
+                    inset -5px -5px 10px $color-secondary;
+                             
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 10px 10px 15px $color-secondary, 
+                    -10px -10px 30px $color-primary, 
+                    inset -10px -10px 20px $color-primary, 
+                    inset 5px 5px 10px $color-secondary;
+    }
+}
