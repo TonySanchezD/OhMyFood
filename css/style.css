@@ -59,7 +59,7 @@ table {
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.5);
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   width: 100%;
   background-color: white;
 }
@@ -112,7 +112,7 @@ main {
   margin-right: 28px;
 }
 .fa-heart:hover {
-  color: #9356DC;
+  color: #9256dc;
 }
 .fa-heart:hover::after {
   transform: translate(-100%, 0%) scale(1.1);
@@ -127,7 +127,7 @@ main {
   font-weight: 900;
   display: inline-block;
   color: transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#FF79DA, #9256dc);
   background-clip: text;
   -webkit-background-clip: text;
   transform: translate(-100%, 50%) scale(0);
@@ -159,6 +159,63 @@ main {
   transform: translate(-50%, -50%) rotate(1turn);
 }
 
+.categorie-repas:nth-of-type(1) .element-repas:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+.categorie-repas:nth-of-type(1) .element-repas:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.categorie-repas:nth-of-type(1) .element-repas:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.categorie-repas:nth-of-type(1) .element-repas:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+
+.categorie-repas:nth-of-type(2) .element-repas:nth-of-type(1) {
+  animation-delay: 0.8s;
+}
+.categorie-repas:nth-of-type(2) .element-repas:nth-of-type(2) {
+  animation-delay: 1s;
+}
+.categorie-repas:nth-of-type(2) .element-repas:nth-of-type(3) {
+  animation-delay: 1.2s;
+}
+.categorie-repas:nth-of-type(2) .element-repas:nth-of-type(4) {
+  animation-delay: 1.4s;
+}
+
+.categorie-repas:nth-of-type(3) .element-repas:nth-of-type(1) {
+  animation-delay: 1.4s;
+}
+.categorie-repas:nth-of-type(3) .element-repas:nth-of-type(2) {
+  animation-delay: 1.6s;
+}
+.categorie-repas:nth-of-type(3) .element-repas:nth-of-type(3) {
+  animation-delay: 1.8s;
+}
+.categorie-repas:nth-of-type(3) .element-repas:nth-of-type(4) {
+  animation-delay: 2s;
+}
+
+.element-repas {
+  animation-duration: 2s;
+  animation-name: glissement;
+  animation-iteration-count: 1;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes glissement {
+  from {
+    opacity: 0;
+    transform: translate(0, 30%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
 .button {
   display: flex;
   justify-content: space-around;
@@ -172,7 +229,7 @@ main {
   padding: 0px 24px 0px 24px;
   font-size: 16px;
   color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9256dc);
   min-width: 150px;
 }
 .button:hover {
@@ -182,6 +239,61 @@ main {
   filter: brightness(1.2);
 }
 
+.box-loader {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(rgba(146, 86, 220, 0.2), rgba(255, 121, 218, 0.2));
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.loader:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.loader:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+
+.loader:nth-of-type(3) {
+  animation-delay: 1s;
+}
+
+.loader {
+  margin: 4vw;
+  border-radius: 100%;
+  border: 1px solid #9256dc;
+  height: 5vw;
+  width: 5vw;
+  background: linear-gradient(#9256dc, #FF79DA);
+  box-shadow: 10px 10px 15px #FF79DA, -10px -10px 30px #9256dc, inset -10px -10px 20px #9256dc, inset 5px 5px 10px #FF79DA;
+  animation-duration: 1.5s;
+  animation-name: loader-animation;
+  animation-iteration-count: 1;
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: scale(1);
+    box-shadow: 10px 10px 15px #FF79DA, -10px -10px 30px #9256dc, inset -10px -10px 20px #9256dc, inset 5px 5px 10px #FF79DA;
+  }
+  50% {
+    border: 1px solid #FF79DA;
+    transform: scale(1.55);
+    box-shadow: -5px -5px 15px #FF79DA, 5px 5px 15px #9256dc, inset 5px 5px 10px #9256dc, inset -5px -5px 10px #FF79DA;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 10px 10px 15px #FF79DA, -10px -10px 30px #9256dc, inset -10px -10px 20px #9256dc, inset 5px 5px 10px #FF79DA;
+  }
+}
 .localisation {
   display: flex;
   justify-content: center;
@@ -245,7 +357,7 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9256dc);
   position: absolute;
   left: 0;
   transform: translate(-50%);
@@ -266,10 +378,10 @@ main {
   font-size: 16px;
 }
 .element-liste:hover {
-  background-color: #f2eafb;
+  background-color: #f1eafb;
 }
 .element-liste:hover .element-liste__icon {
-  color: #9356DC;
+  color: #9256dc;
 }
 
 .section-restaurants {
