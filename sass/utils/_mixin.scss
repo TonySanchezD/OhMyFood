@@ -25,9 +25,7 @@
    @include flex-center;
 }
 
-
-
- @mixin shadow {
+@mixin shadow {
    box-shadow: $shadow;
    transition: 0.2s;
    &:hover{

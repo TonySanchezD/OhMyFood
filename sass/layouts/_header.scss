@@ -5,6 +5,10 @@
     z-index: 99;
     width: 100%;
     background-color: white;
+
+    @include tablette {
+        
+    }
       
     h1 {
         font-family: $font-logo;

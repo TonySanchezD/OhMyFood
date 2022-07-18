@@ -78,7 +78,7 @@
 .section-restaurants {
     background-color: rgba(128, 128, 128, 0.1);
     padding-top: $size;
-    @include flex-center
+    @include flex-center;
 }
 
 .restaurants {
