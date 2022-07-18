@@ -21,9 +21,18 @@
         margin-bottom: $size;
         font-size: $size;
 
+        a {
+            color: white;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
         span {
             margin-right: calc($size/2);
         }
+
     }
 
 }

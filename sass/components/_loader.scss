@@ -12,8 +12,7 @@
     left: 0px;
     background: linear-gradient(rgba($color-primary, 1), rgba($color-secondary, 1)) ;
     @include flex-center($axe-p: center, $axe-s: center, $x-y: row);
-    flex-wrap: wrap;
-    animation: opacity0 3s forwards;
+    animation: opacity0 4s forwards;
     z-index: 9999;
 
     &__element {
@@ -30,8 +29,6 @@
         animation-name: loader-animation;
         animation-iteration-count: infinite; 
     }
-
-    
 }
 
 @keyframes opacity0 {
@@ -68,7 +65,6 @@
         transition: ease-in-out;
         border-radius: 100%;
         transform: scale(1.55);
-
         box-shadow: 5px 5px 15px $color-secondary, 
                     -10px -15px 15px $color-primary,
                     -15px -10px 15px $color-primary, 
