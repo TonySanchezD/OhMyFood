@@ -1,0 +1,80 @@
+.box-loader {
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient($color-primary, $color-secondary) ;
+    z-index: 9999;
+    @include flex-center($axe-p: center, $axe-s: center, $x-y: row);
+    flex-wrap: wrap;
+    animation: opacity0 2s forwards;
+}
+
+@for $i from 1 through 3 {
+     .loader:nth-of-type(#{$i}) {
+        animation-delay: calc($i * 0.5s - 0.5s);
+     }
+}
+
+.loader {
+    margin: 4vw;
+    border-radius: 100%;
+   
+    height: 50px;
+    width: 50px;
+    background: linear-gradient($color-primary ,$color-secondary);
+    box-shadow: 10px 10px 15px $color-secondary, 
+                    -10px -10px 30px $color-primary, 
+                    inset -10px -10px 20px $color-primary, 
+                    inset 5px 5px 10px $color-secondary;
+    animation-duration: 1.5s;
+    animation-name: loader-animation;
+    animation-iteration-count: infinite;  
+}
+
+@keyframes opacity0 {
+    0% {
+        opacity: 1;
+        display: flex;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes loader-animation {
+
+    0%{
+        transform: scale(1);
+        box-shadow: 10px 10px 15px $color-secondary, 
+                    -10px -10px 30px $color-primary, 
+                    inset -10px -10px 20px $color-primary, 
+                    inset 5px 5px 10px $color-secondary;
+    }
+
+    50% {
+        
+
+        transform: scale(1.55);
+        box-shadow: -5px -5px 15px $color-secondary, 
+                    5px 5px 15px $color-primary, 
+                    inset 5px 5px 10px $color-primary, 
+                    inset -5px -5px 10px $color-secondary;
+                             
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 10px 10px 15px $color-secondary, 
+                    -10px -10px 30px $color-primary, 
+                    inset -10px -10px 20px $color-primary, 
+                    inset 5px 5px 10px $color-secondary;
+    }
+}

@@ -2,10 +2,10 @@
     @include flex-center;
     box-shadow: $shadow;
     position: fixed;
-    z-index: 999;
+    z-index: 99;
     width: 100%;
     background-color: white;
-
+      
     h1 {
         font-family: $font-logo;
         font-size: $size--logo;

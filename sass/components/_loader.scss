@@ -1,64 +1,92 @@
-.box-loader {
-    position: fixed;
-    height: 100%;
-    width: 100vw;
-    top: 0px;
-    left: 0px;
-    background: linear-gradient(rgba($color-primary, 0.2), rgba($color-secondary, 0.2)) ;
-    z-index: 9999;
-    @include flex-center($axe-p: center, $axe-s: center, $x-y: row);
-    flex-wrap: wrap;
-}
-
 @for $i from 1 through 3 {
-     .loader:nth-of-type(#{$i}) {
+     .loader__element:nth-of-type(#{$i}) {
         animation-delay: calc($i * 0.5s - 0.5s);
      }
 }
 
 .loader {
-    margin: 4vw;
-    border-radius: 100%;
-    border: 1px solid $color-primary;
-    height: 5vw;
-    width: 5vw;
-    background: linear-gradient($color-primary ,$color-secondary);
-    box-shadow: 10px 10px 15px $color-secondary, 
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(rgba($color-primary, 1), rgba($color-secondary, 1)) ;
+    @include flex-center($axe-p: center, $axe-s: center, $x-y: row);
+    flex-wrap: wrap;
+    animation: opacity0 3s forwards;
+    z-index: 9999;
+
+    &__element {
+        margin: 15px;
+        border-radius: 10%;
+        height: 30px;
+        width: 30px;
+        background: linear-gradient($color-primary ,$color-secondary);
+        box-shadow: 10px 10px 15px $color-secondary, 
                     -10px -10px 30px $color-primary, 
                     inset -10px -10px 20px $color-primary, 
                     inset 5px 5px 10px $color-secondary;
-    animation-duration: 1.5s;
-    animation-name: loader-animation;
-    animation-iteration-count: 1;  
+        animation-duration: 1.5s;
+        animation-name: loader-animation;
+        animation-iteration-count: infinite; 
+    }
+
+    
+}
+
+@keyframes opacity0 {
+    0% {
+        opacity: 1;
+        display: flex;
+    }
+
+    60% {
+        transition: ease-in-out;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
 }
 
 @keyframes loader-animation {
-    
 
     0%{
+        transition: ease-in-out;
+        border-radius: 10%;
         transform: scale(1);
         box-shadow: 10px 10px 15px $color-secondary, 
+                    -10px -10px 30px $color-primary,
                     -10px -10px 30px $color-primary, 
                     inset -10px -10px 20px $color-primary, 
                     inset 5px 5px 10px $color-secondary;
     }
 
     50% {
-        border: 1px solid $color-secondary;  
-
+        transition: ease-in-out;
+        border-radius: 100%;
         transform: scale(1.55);
-        box-shadow: -5px -5px 15px $color-secondary, 
-                    5px 5px 15px $color-primary, 
-                    inset 5px 5px 10px $color-primary, 
-                    inset -5px -5px 10px $color-secondary;
+
+        box-shadow: 5px 5px 15px $color-secondary, 
+                    -10px -15px 15px $color-primary,
+                    -15px -10px 15px $color-primary, 
+                    inset 10px 10px 10px $color-primary, 
+                    inset -5px -5px 5px $color-secondary;
                              
     }
 
     100% {
+        border-radius: 10%;
         transform: scale(1);
         box-shadow: 10px 10px 15px $color-secondary, 
-                    -10px -10px 30px $color-primary, 
+                    -10px -10px 30px $color-primary,
+                    -10px -10px 30px $color-primary,
                     inset -10px -10px 20px $color-primary, 
                     inset 5px 5px 10px $color-secondary;
     }
 }
+
+
+
