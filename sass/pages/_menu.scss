@@ -16,6 +16,7 @@
 
 .title-restaurant { 
     display: flex;
+    justify-content: space-around;
     align-items: center;
     width: $width;
     margin-bottom: $size;
@@ -24,10 +25,12 @@
         font-family: $font-logo;
         font-weight: 400;
         font-size: $size--title + 4;
+        width: 80%
     }
 
     &__heart { 
         @include icon;
+    
     }
 }
 
@@ -44,9 +47,6 @@
             padding-bottom: 4px;
         }
     }
-
-    
-
 }
 
 .element-repas { 
@@ -64,10 +64,8 @@
     &__text { 
         white-space: nowrap;
         overflow: hidden;
-        padding: $size - 4;
+        padding: calc($size / 4) * 3;
         flex: 1;
-        
-        
     }
 
     &__title {

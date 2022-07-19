@@ -6,16 +6,18 @@ $color-background: rgb(244, 244, 244);
 $font-logo: 'Shrikhand', cursive; 
 $font-text: 'Roboto', sans-serif;
 
-$size: 16px;
+$size: 16px !default;
 $size--logo: $size * 2;
 $size--title: $size * 1.5;
 $size--title-small: $size * 1.2;
-$size--icon: 28px;
+$size--icon: $size * 2;
 
 $shadow: 0px calc($size/4) calc($size/4) rgba(128, 128, 128, 0.5);
 
 $logo-padding: $size--title-small 0px $size--title-small - 10 0px;
 
-$height-header: 60px;
+$height-header: calc($size--title-small * 2 - 10px + $size--logo);
 
 $width: 90%;
+$width-height-check-animation : $size * 4 + 1;
+

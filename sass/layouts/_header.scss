@@ -6,14 +6,16 @@
     width: 100%;
     background-color: white;
 
-    @include tablette {
-        
-    }
+    
       
     h1 {
         font-family: $font-logo;
         font-size: $size--logo;
         padding: $logo-padding;
+        
+            @include tablette {
+                font-size: $size--logo;
+            }
     }
     .fa-arrow-left { 
         font-size: $size--logo - 10;
