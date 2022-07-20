@@ -1,6 +1,6 @@
 @import "./base/reset";
+
 @import "./utils/variable";
-@import "./utils/map";
 @import "./utils/mixin";
 @import "./utils/breakpoints";
 
@@ -16,6 +16,7 @@
 
 @import "./pages/accueil";
 @import "./pages/menu";
+@import "./utils/breakpoints";
 
 
 

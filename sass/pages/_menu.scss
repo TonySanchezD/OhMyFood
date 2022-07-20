@@ -4,6 +4,12 @@
     object-fit: cover;
     position: fixed;
     z-index: -1;
+
+    @include tablette {
+        height: 60vw;
+    }
+
+
 }
 
 .menu { 
@@ -12,6 +18,10 @@
     border-radius: 30px 30px 0 0;
     margin-top: 60vw;
     padding-bottom: $size;
+
+    @include tablette {
+        margin-top: 50vw;
+    }
 }
 
 .title-restaurant { 
@@ -25,27 +35,54 @@
         font-family: $font-logo;
         font-weight: 400;
         font-size: $size--title + 4;
-        width: 80%
+        width: 80%; 
     }
 
     &__heart { 
         @include icon;
-    
     }
 }
 
-.categorie-repas {
+.categories {
+    @include flex-center;
+    flex-wrap: wrap;
     width: $width;
+}
+
+.categorie-repas {
+    width: 100%;
     margin-bottom: $size * 2;
+
+    @include tablette {
+        margin-bottom: 50px;
+    }
+
+    @include tablette {
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__title {
         font-size: $size--title-small;
         margin-bottom: $size--title;
         
+        
         span {
             border-bottom: 3px solid $color-tertiary;
             padding-bottom: 4px;
         }
+    }
+}
+
+
+.tout-elemant-repas {
+    @include tablette {
+        width: 85%;
+        margin-top: 9px;
+        padding-top: 20px;
+        
+        border-top: 3px dashed $color-tertiary; 
+        
     }
 }
 
@@ -59,8 +96,6 @@
     border-radius: 15px;
     overflow: hidden;
     
-    
-
     &__text { 
         white-space: nowrap;
         overflow: hidden;

@@ -5,18 +5,15 @@
     z-index: 99;
     width: 100%;
     background-color: white;
-
-    
-      
+         
     h1 {
         font-family: $font-logo;
         font-size: $size--logo;
-        padding: $logo-padding;
+        padding: $logo-padding; 
+
         
-            @include tablette {
-                font-size: $size--logo;
-            }
     }
+    
     .fa-arrow-left { 
         font-size: $size--logo - 10;
         position: absolute;
@@ -25,3 +22,5 @@
         transform: translate(0, -50%);
     }
 }
+
+

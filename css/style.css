@@ -68,11 +68,6 @@ table {
   font-size: 32px;
   padding: 19.2px 0px 9.2px 0px;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .header h1 {
-    font-size: 32px;
-  }
-}
 .header .fa-arrow-left {
   font-size: 22px;
   position: absolute;
@@ -380,6 +375,12 @@ main {
 .element-liste:hover {
   box-shadow: 4px 5.3333333333px 8px rgba(128, 128, 128, 0.5);
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .element-liste {
+    width: 100%;
+    margin: 0px 0px 16px 0px;
+  }
+}
 .element-liste__numero {
   display: flex;
   justify-content: space-around;
@@ -395,15 +396,29 @@ main {
   color: white;
   border-radius: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .element-liste__numero {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px 0 0 16px;
+    left: 31px;
+  }
+}
 .element-liste__text {
   font-weight: bold;
   font-size: 16px;
 }
 .element-liste__icon {
   position: absolute;
-  left: 12.5%;
+  left: 14%;
   color: rgb(128, 128, 128);
   font-size: 16px;
+  transform: translate(-50%);
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .element-liste__icon {
+    left: 20%;
+  }
 }
 .element-liste:hover {
   background-color: #f1eafb;
@@ -431,6 +446,20 @@ main {
 }
 .restaurants a {
   width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants a {
+    width: 47.5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .carte {
@@ -499,6 +528,11 @@ main {
   position: fixed;
   z-index: -1;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .img-restaurant {
+    height: 60vw;
+  }
+}
 
 .menu {
   display: flex;
@@ -509,6 +543,11 @@ main {
   border-radius: 30px 30px 0 0;
   margin-top: 60vw;
   padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    margin-top: 50vw;
+  }
 }
 
 .title-restaurant {
@@ -533,9 +572,29 @@ main {
   flex-direction: column;
 }
 
-.categorie-repas {
+.categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 90%;
+}
+
+.categorie-repas {
+  width: 100%;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .categorie-repas {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .categorie-repas {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .categorie-repas__title {
   font-size: 19.2px;
@@ -544,6 +603,15 @@ main {
 .categorie-repas__title span {
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tout-elemant-repas {
+    width: 85%;
+    margin-top: 9px;
+    padding-top: 20px;
+    border-top: 3px dashed #99E2D0;
+  }
 }
 
 .element-repas {
