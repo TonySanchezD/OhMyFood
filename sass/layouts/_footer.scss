@@ -31,8 +31,8 @@
         width: $width;
 
         @include desktop {
-            width: $width-desktop;
-            margin: auto;
+            @include width-desktop;
+            
         }
     }
 

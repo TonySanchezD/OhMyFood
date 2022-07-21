@@ -5,7 +5,7 @@
         color: white;
         display: inline-block;
         height: $width-height-check-animation;
-        transition: all 0.4s linear;
+        transition: all 0.3s ease-out;
         width: 0px;
         position: relative;
         
@@ -15,7 +15,8 @@
             left: calc($width-height_check-animation/2);
             top: 50%;
             transform: translate(-50%, -50%) rotate(0turn);
-            transition: all 0.4s linear;
+            
+            
         }
     }
 
@@ -25,5 +26,7 @@
 
     &:hover .fa-circle-check {
         transform: translate(-50%, -50%) rotate(1turn);
+        transition: all 0.3s ease-out;
+        animation-delay: 0.1s;
     }
 }

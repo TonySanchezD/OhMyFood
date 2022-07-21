@@ -3,7 +3,7 @@
 
         @for $e from 1 through 4 {
             .element-repas:nth-of-type(#{$e}){
-                animation-delay: calc($e * 0.2s) + calc(calc($i - 1)*0.6);
+                animation-delay: calc($e * 0.1s) + calc(calc($i - 1)*0.3);
             }  
         }
     }

@@ -141,10 +141,11 @@
 
     &__title {
         font-weight: 900;
-        font-size: $size + 2;
+        font-size: $size + 1;
         margin-bottom: calc($size / 2); 
         overflow: hidden;
         text-overflow: ellipsis;
+        cursor: context-menu;
     }
 
     &__small-title { 
