@@ -1,10 +1,10 @@
 @mixin tablette {
-   @media screen and (min-width: $breakpoints-small) and (max-width: $breakpoints-big) {
+   @media screen and (min-width: $breakpoints-small) and (max-width: $breakpoints-big - 1) {
       @content;
    }
 }
  
-@mixin descktop {
+@mixin desktop {
     @media screen and (min-width: $breakpoints-big) {
        @content;
     }

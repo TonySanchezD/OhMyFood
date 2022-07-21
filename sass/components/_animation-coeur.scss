@@ -1,10 +1,10 @@
-
 .fa-heart {
     margin-right: 28px;
     min-width: $size--icon;
     
     &:hover{
         color: $color-primary;
+        cursor: pointer;
 
         &::after  {
             transform: translate(-100%, 0%) scale(1.1);

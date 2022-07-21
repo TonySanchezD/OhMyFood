@@ -1,3 +1,9 @@
+#fonctionnement > *, .section-restaurants > *, .footer > * {
+    @include desktop {
+        @include width-desktop;
+    }
+}
+
 .localisation {
     @include flex-center($axe-p: center, $x-y: row);
     font-size: $size; 
@@ -20,16 +26,21 @@
         font-size: $size;
         width: $width;
     } 
-    
 }
 
 #fonctionnement { 
     @include flex-center;
 }
 
+
+
 .liste { 
     width: $width; 
     margin-bottom: $size*2;
+
+    @include desktop {
+        @include flex-center ($x-y: row);
+    }
 }
 
 .element-liste { background-color: $color-background;
@@ -46,7 +57,11 @@
         width: 100%;
         margin: 0px 0px $size 0px;
     }
-    
+
+    @include desktop {
+        width: 30%;
+    }
+
     &__numero {
         @include flex-center;
         background: linear-gradient($color-secondary, $color-primary);
@@ -65,11 +80,23 @@
             border-radius: $size 0 0 $size;
             left: 31px;
         }
+
+        @include desktop {
+            width: 64px;
+            height: 64px;
+            border-radius: $size 0 0 $size;
+            left: 31px;
+        }
     }
 
     &__text {
         font-weight: bold;
         font-size: $size;
+
+        @include desktop {
+            position: relative;
+            left: 40px;
+        }
     }
 
     &__icon {
@@ -81,6 +108,10 @@
 
         @include tablette {
             left: 20%;
+        }
+
+        @include desktop {
+            left: 28%;
         }
     }
 
@@ -94,7 +125,7 @@
 }
 
 .section-restaurants {
-    background-color: rgba(128, 128, 128, 0.1);
+    background-color: $color-background;
     padding-top: $size;
     @include flex-center;
 }
@@ -103,32 +134,45 @@
     width: $width;
     @include flex-center;
     padding-bottom: $size*3;
-    a {
-        width: 100%;
-        @include tablette {
-            width: 47.5%;
-        }
-    }
 
     @include tablette {
-        @include flex-center($x-y: row);
+        @include flex-center($axe-p: space-between,$x-y: row);
         flex-wrap: wrap;
+    }
+
+    @include desktop {
+        @include flex-center($axe-p: space-between, $x-y: row);
+        flex-wrap: wrap;
+        @include width-desktop;
+    }
+    
+    a {
+        width: 100%;
+        margin-bottom: $size;
+        @include tablette {
+            width: 48.5%;
+            margin-bottom: 22px;
+        }
+
+        @include desktop {
+            width: 49%;
+            margin-bottom: 22px;
+        }
     }
 }
 
 .carte { 
     @include flex-center($axe-p: start);
     @include shadow;
-    margin-bottom: $size;
+    
     width: 100%;
     height: $size * 15.5;
     border-radius: 20px;
     background-color: white;
     position: relative;
     
-
-    @include tablette {
-        
+    @include desktop {
+        height: 325px;
     }
 
     img {

@@ -6,7 +6,6 @@
 
 @import "./layouts/header";
 @import "./layouts/footer";
-@import "./layouts/body";
 
 @import './components/animation-coeur';
 @import "./components/animation-check-icon";
@@ -34,6 +33,10 @@ body {
     width: 100%;
 }
 
+main {
+    padding-top: $height-header;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -43,5 +46,4 @@ h2 {
     @include title;
     width: $width;
 }
-
 /* ---------- Body ---------- */

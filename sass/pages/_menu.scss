@@ -9,7 +9,10 @@
         height: 60vw;
     }
 
-
+    @include desktop {
+        height: 100%;
+        object-position: 0% 62%;
+    }
 }
 
 .menu { 
@@ -22,15 +25,29 @@
     @include tablette {
         margin-top: 50vw;
     }
+
+    @include desktop {
+        margin-top: 50vh;
+        @include width-desktop;
+        border-radius: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-bottom: 0px;
+        background-color: rgba($color-background, 0.8);
+    }
 }
 
 .title-restaurant { 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: $width;
     margin-bottom: $size;
     
+    @include desktop {
+        @include width-desktop;
+    }
+
     &__name { 
         font-family: $font-logo;
         font-weight: 400;
@@ -47,6 +64,13 @@
     @include flex-center;
     flex-wrap: wrap;
     width: $width;
+
+    @include desktop {
+        @include width-desktop;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 }
 
 .categorie-repas {
@@ -55,17 +79,27 @@
 
     @include tablette {
         margin-bottom: 50px;
-    }
-
-    @include tablette {
         display: flex;
         justify-content: space-between;
+        
+    }
+
+    @include desktop {
+        width: calc(30% - 3px);
+    }
+
+    &--border{
+        @include desktop {
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            border-left: 3px dashed $color-tertiary;
+            border-right: 3px dashed $color-tertiary;
+        }
     }
 
     &__title {
         font-size: $size--title-small;
         margin-bottom: $size--title;
-        
         
         span {
             border-bottom: 3px solid $color-tertiary;
@@ -80,9 +114,7 @@
         width: 85%;
         margin-top: 9px;
         padding-top: 20px;
-        
         border-top: 3px dashed $color-tertiary; 
-        
     }
 }
 
@@ -95,6 +127,10 @@
     margin-bottom: $size;
     border-radius: 15px;
     overflow: hidden;
+
+    &:hover {
+        cursor: pointer;
+    }
     
     &__text { 
         white-space: nowrap;
