@@ -115,13 +115,13 @@ table {
     width: 100%;
   }
 }
-@media screen and (min-width: 1024px) and (max-height: 931px) {
+@media screen and (min-width: 1024px) and (max-height: 920px) {
   .footer--menu #footer__logo {
     text-align: center;
     padding-top: 16px;
   }
 }
-@media screen and (min-width: 1024px) and (max-height: 931px) {
+@media screen and (min-width: 1024px) and (max-height: 920px) {
   .footer--menu ul {
     display: flex;
     justify-content: space-around;
@@ -694,7 +694,7 @@ table {
     background-color: rgba(244, 244, 244, 0.8);
   }
 }
-@media screen and (min-width: 1024px) and (min-width: 1024px) and (max-height: 931px) {
+@media screen and (min-width: 1024px) and (min-width: 1024px) and (max-height: 920px) {
   .menu {
     margin-top: calc((100vh - 729px) / 2); /* Pour que le menu soit centré */
   }
