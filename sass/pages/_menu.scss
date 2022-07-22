@@ -31,10 +31,19 @@
         @include width-desktop;
         border-radius: 30px;
         margin-top: 50px;
-        
         padding-bottom: 0px;
         background-color: rgba($color-background, 0.8);
+
+        @include desktop-small {
+            margin-top: 20px;
+
+            .button {
+                margin: 0 0 32px 0;
+            }
+        }
     }
+
+    
 }
 
 .title-restaurant { 

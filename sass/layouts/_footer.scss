@@ -4,6 +4,8 @@
     color: white;
     padding-bottom: $size*2;
 
+    
+
     &--menu {
         @include desktop {
             background-color: rgba(50, 50, 50, 0.8);
@@ -14,16 +16,22 @@
         }
     }
 
-    &__logo { 
+    #footer__logo { 
         font-family: $font-logo;
         font-weight: 400;
         width: $width;
         margin-top: $size;
         margin-bottom: $size;
 
+
         @include desktop {
-            width: $width-desktop;
+            @include width-desktop;
             margin: auto;
+
+            @include desktop-small {
+                text-align: center;
+                padding-top: 16px;
+            }
         }
     }
     
@@ -32,8 +40,12 @@
 
         @include desktop {
             @include width-desktop;
-            
+
+            @include desktop-small {
+                @include flex-center($x-y: row);
+            }
         }
+        
     }
 
     li {
