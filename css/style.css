@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ---------- Resset CSS ---------- */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
@@ -683,7 +684,6 @@ table {
 }
 @media screen and (min-width: 1024px) {
   .menu {
-    margin-top: 50vh;
     width: 1200px;
     max-width: 90%;
     margin-left: auto;
@@ -696,7 +696,7 @@ table {
 }
 @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-height: 931px) {
   .menu {
-    margin-top: 20px;
+    margin-top: calc((100vh - 729px) / 2); /* Pour que le menu soit centré */
   }
   .menu .button {
     margin: 0 0 32px 0;

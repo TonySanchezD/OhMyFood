@@ -27,7 +27,6 @@
     }
 
     @include desktop {
-        margin-top: 50vh;
         @include width-desktop;
         border-radius: 30px;
         margin-top: 50px;
@@ -35,7 +34,7 @@
         background-color: rgba($color-background, 0.8);
 
         @include desktop-small {
-            margin-top: 20px;
+            margin-top: calc(( 100vh - $height-allelements-menu) / 2); /* Pour que le menu soit centré */
 
             .button {
                 margin: 0 0 32px 0;
