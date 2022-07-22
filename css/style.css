@@ -108,7 +108,7 @@ table {
 }
 @media screen and (min-width: 1024px) {
   .footer--menu {
-    background-color: rgba(50, 50, 50, 0.8);
+    background-color: rgba(50, 50, 50, 0.9);
     padding-bottom: 0px;
     position: fixed;
     bottom: 0px;
