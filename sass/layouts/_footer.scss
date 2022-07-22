@@ -14,6 +14,19 @@
             bottom: 0px;
             width: 100%;
         }
+
+        #footer__logo {
+            @include desktop-small {
+                text-align: center;
+                padding-top: 16px;
+            }
+        }
+
+        ul {
+            @include desktop-small {
+                @include flex-center($x-y: row);
+            }
+        }
     }
 
     #footer__logo { 
@@ -26,12 +39,7 @@
 
         @include desktop {
             @include width-desktop;
-            margin: auto;
-
-            @include desktop-small {
-                text-align: center;
-                padding-top: 16px;
-            }
+                margin: auto;
         }
     }
     
@@ -40,12 +48,7 @@
 
         @include desktop {
             @include width-desktop;
-
-            @include desktop-small {
-                @include flex-center($x-y: row);
-            }
         }
-        
     }
 
     li {
