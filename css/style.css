@@ -839,9 +839,6 @@ table {
   font-size: 16px;
 }
 
-/* ---------- Font ---------- */
-/* ---------- Font ---------- */
-/* ---------- Body ---------- */
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -864,7 +861,5 @@ h2 {
   margin-bottom: 8px;
   width: 90%;
 }
-
-/* ---------- Body ---------- */
 
 /*# sourceMappingURL=style.css.map */

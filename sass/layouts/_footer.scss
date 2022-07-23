@@ -36,7 +36,6 @@
         margin-top: $size;
         margin-bottom: $size;
 
-
         @include desktop {
             @include width-desktop;
                 margin: auto;
