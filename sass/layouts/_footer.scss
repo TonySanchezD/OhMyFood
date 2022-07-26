@@ -3,6 +3,7 @@
     background-color: rgba(50, 50, 50, 1);
     color: white;
     padding-bottom: $size*2;
+    
 
     
 
@@ -44,9 +45,15 @@
     
     ul {
         width: $width;
+        position: relative;
 
         @include desktop {
             @include width-desktop;
+        }
+
+        span + a {
+            position: absolute;
+            left: 28px;
         }
     }
 
