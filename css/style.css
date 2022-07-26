@@ -199,6 +199,7 @@ table {
   color: transparent;
   background-image: linear-gradient(#FF79DA, #9256dc);
   background-clip: text;
+  -webkit-background-clip: text;
   transform: translate(-100%, 50%) scale(0);
   transition: all 0.3s cubic-bezier(0.85, 0.23, 1, 0.52);
   margin-right: -56px;
