@@ -147,7 +147,6 @@ table {
 }
 .footer ul {
   width: 90%;
-  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .footer ul {
@@ -157,14 +156,11 @@ table {
     margin-right: auto;
   }
 }
-.footer ul span + a {
-  position: absolute;
-  left: 28px;
-}
 .footer li {
   display: flex;
   margin-bottom: 16px;
   font-size: 16px;
+  position: relative;
 }
 .footer li a {
   color: white;
@@ -174,6 +170,11 @@ table {
 }
 .footer li span {
   margin-right: 8px;
+}
+.footer li span + a {
+  position: absolute;
+  left: 28px;
+  width: 200px;
 }
 
 .fa-heart {

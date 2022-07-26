@@ -45,22 +45,20 @@
     
     ul {
         width: $width;
-        position: relative;
+        
 
         @include desktop {
             @include width-desktop;
         }
 
-        span + a {
-            position: absolute;
-            left: 28px;
-        }
+        
     }
 
     li {
         display: flex;
         margin-bottom: $size;
         font-size: $size;
+        position: relative;
 
         a {
             color: white;
@@ -72,6 +70,12 @@
 
         span {
             margin-right: calc($size/2);
+        }
+        
+        span + a {
+            position: absolute;
+            left: 28px;
+            width: 200px;
         }
     }
 }
